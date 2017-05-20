@@ -1,0 +1,19 @@
+{
+  "name": "hot-med",
+  "version": "1.0.0",
+  "description": "Booking medical platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sersalex/hot-med.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sersalex/hot-med/issues"
+  },
+  "homepage": "https://github.com/sersalex/hot-med#readme"
+}
