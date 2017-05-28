@@ -1,3 +1,29 @@
-<p>
-  clinics works!
-</p>
+<div class="row">
+  <div class="col-md-12">
+    <button class="btn btn-success pull-right">Добавить</button>
+    <button class="btn btn-warning pull-right" style="margin-right: 10px;">Редактировать</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <app-clinic-list></app-clinic-list>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <router-outlet></router-outlet>
+      <div class="card-block">
+        <h3 class="card-title">Название клиники</h3>
+        <p class="card-text">Рабочие часы: 00:00</p>
+        <h4>Врачи:</h4>
+        <ul class="list-group">
+          <li class="list-group-item">Иван Петров</li>
+          <li class="list-group-item">Федя Иванов</li>
+          <li class="list-group-item">Мария Баянова</li>
+          <li class="list-group-item">Коля Жук</li>
+          <li class="list-group-item">Алилуя Петрович</li>
+        </ul>
+        <a class="btn btn-primary">Посетить веб-сайт</a>
+      </div>
+    </div>
+  </div>
+</div>
