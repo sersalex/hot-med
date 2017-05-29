@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Clinic} from "../shared/clinic.type";
+import {ClinicsService} from "./clinics.service";
+
+
 
 @Component({
   selector: 'app-clinics',
@@ -7,10 +10,16 @@ import {Clinic} from "../shared/clinic.type";
   styleUrls: ['./clinics.component.css']
 })
 export class ClinicsComponent implements OnInit {
-  // selectedClinic:Clinic;
-  constructor() { }
+  selectedClinic:Clinic;
+  constructor(private clinicService:ClinicsService) { }
 
   ngOnInit() {
+    this.clinicService.clinicSelected
+      .subscribe(
+        (clinic:Clinic) => {
+          this.selectedClinic = clinic;
+        }
+      );
   }
 
 }
