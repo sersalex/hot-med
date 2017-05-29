@@ -14,6 +14,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { RigisterComponent } from './rigister/rigister.component';
 import {AppRoutingModule} from "./app-routing.module";
+import { ClinicNewComponent } from './clinics/clinic-new/clinic-new.component';
+import { ClinicEditComponent } from './clinics/clinic-edit/clinic-edit.component';
+import { ClinicComponent } from './clinics/clinic/clinic.component';
+import { ClinicListComponent } from './clinics/clinic-list/clinic-list.component';
+import {ClinicsService} from "./clinics/clinics.service";
+import { ClinicDetailComponent } from './clinics/clinic-detail/clinic-detail.component';
+import { ClinicStartComponent } from './clinics/clinic-start/clinic-start.component';
 
 
 @NgModule({
@@ -26,7 +33,13 @@ import {AppRoutingModule} from "./app-routing.module";
     BookingComponent,
     DashboardComponent,
     LoginComponent,
-    RigisterComponent
+    RigisterComponent,
+    ClinicNewComponent,
+    ClinicEditComponent,
+    ClinicComponent,
+    ClinicListComponent,
+    ClinicDetailComponent,
+    ClinicStartComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +47,7 @@ import {AppRoutingModule} from "./app-routing.module";
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ClinicsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

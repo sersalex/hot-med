@@ -1,1 +1,3 @@
-<a class="list-group-item list-group-item-action">{{clinic.name}}</a>
+<a [routerLink]="[index]" class="list-group-item list-group-item-action" (click)="onSelected()">
+  <span>{{clinic.name}}</span>
+</a>

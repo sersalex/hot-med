@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Clinic} from "../../shared/clinic.type";
 import {ClinicsService} from "../clinics.service";
 

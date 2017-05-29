@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Clinic} from "../shared/clinic.type";
 
 @Component({
   selector: 'app-clinics',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clinics.component.css']
 })
 export class ClinicsComponent implements OnInit {
-
+  // selectedClinic:Clinic;
   constructor() { }
 
   ngOnInit() {
